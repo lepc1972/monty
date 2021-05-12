@@ -36,9 +36,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void error(void);
-void open_read(char **argv);
-void operror(char **argv);
+
 
 
 #endif /* _MONTY_H_ */
