@@ -38,6 +38,7 @@ typedef struct instruction_s
 
 void error(void);
 void open_read(char **argv);
+void operror(char **argv);
 
 
 #endif /* _MONTY_H_ */
