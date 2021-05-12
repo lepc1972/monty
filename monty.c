@@ -10,6 +10,6 @@ int main(int argc, char **argv)
 {
     while (argc != 2)
         error_arguments();
-	open_and_read(argv);
+    open_and_read(argv);
     return (0);
 }
