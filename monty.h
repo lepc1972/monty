@@ -7,10 +7,10 @@
 #include <ctype.h>
 
 /**
- * struct stack_s - doubly linked list representation of a stack (or queue)
+ * struct stack_s - representation of stack or queue
  * @n: integer
- * @prev: points to the previous element of the stack (or queue)
- * @next: points to the next element of the stack (or queue)
+ * @prev: points to the previous element
+ * @next: points to the next element
  *
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
@@ -55,8 +55,8 @@ void o_pall(stack_t **stack, unsigned int line_number);
 void o_pint(stack_t **stack, unsigned int line_number);
 
 /* multi_functions */
-void op_swap(stack_t **stack, unsigned int line_number);
-void op_add(stack_t **stack, unsigned int line_number);
+void o_swap(stack_t **stack, unsigned int line_number);
+void o_add(stack_t **stack, unsigned int line_number);
 
 
 #endif /* _MONTY_H_ */
