@@ -35,7 +35,15 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-
+/**
+ * struct global_s - opcode and its function
+ * @op_name: the opcode
+ * @value: function to handle the opcode
+ * @head: function to handle the opcode
+ *
+ * Description: opcode and its function
+ * for stack, queues, LIFO, FIFO Holberton project
+ */
 typedef struct global_s
 {
 	char *op_name;
