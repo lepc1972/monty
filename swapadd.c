@@ -36,10 +36,14 @@ void o_add(stack_t **stack, unsigned int line_number)
 		printf("L%u: can't add, stack too short\n", line_number);
 		exit(EXIT_FAILURE);
 	}
+	
 
 	target = *stack;
 	(*stack)->next->n += (*stack)->n;
 	*stack = (*stack)->next;
 
 	free(target);
+
+	
+
 }
