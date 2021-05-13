@@ -29,7 +29,7 @@ void o_swap(stack_t **stack, unsigned int line_number)
 
 void o_add(stack_t **stack, unsigned int line_number)
 {
-	stack_t *target;
+	/*stack_t *target; */
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
 	{
@@ -38,11 +38,11 @@ void o_add(stack_t **stack, unsigned int line_number)
 	}
 
 
-	target = *stack;
+	/*target = *stack;*/
 	(*stack)->next->n += (*stack)->n;
 	*stack = (*stack)->next;
 
-	free(target);
+
 
 
 
