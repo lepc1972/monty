@@ -57,7 +57,7 @@ global.head = new;
 
 void o_pop(stack_t **stack, unsigned int line_number)
 {
-stack_t *target;
+/*stack_t *target;*/
 
 if (stack == NULL || *stack == NULL)
 {
@@ -65,10 +65,10 @@ printf("L%u: can't pop an empty stack\n", line_number);
 exit(EXIT_FAILURE);
 }
 
-target = *stack;
+/*target = *stack;*/
 *stack = (*stack)->next;
 if (*stack != NULL)
-free(target);
+/*free(target);*/
 {
 (*stack)->prev = NULL;
 }
