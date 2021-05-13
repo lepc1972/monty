@@ -68,11 +68,12 @@ void o_pop(stack_t **stack, unsigned int line_number)
 	target = *stack;
 	*stack = (*stack)->next;
 	if (*stack != NULL)
+	free(target);
 	{
 		(*stack)->prev = NULL;
 	}
 
-	free(target);
+	
 }
 
 /**
