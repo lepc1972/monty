@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * o_push     - Push a node on top of stack top
+ * o_push     - Push element on top of stack 
  *
  * @stack:       doubly linked list
  * @line_number: Current line number in monty file
@@ -49,10 +49,10 @@ void o_push(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * o_pop       - Removes the top element of @stack
+ * o_pop       - delete the top element of @stack
  *
  * @stack:        A doubly linked list
- * @line_number:  Current line number in monty script file
+ * @line_number:  Current line number in monty  file
  */
 
 void o_pop(stack_t **stack, unsigned int line_number)
@@ -76,10 +76,10 @@ void o_pop(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * o_nop       - Does nothing
+ * o_nop       -  nothing
  *
  * @stack:        A doubly linked list
- * @line_number:  Current line number in monty script file
+ * @line_number:  Current line number  monty  file
  */
 
 void o_nop(stack_t **stack, unsigned int line_number)
