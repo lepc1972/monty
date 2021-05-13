@@ -40,6 +40,7 @@ exit(EXIT_FAILURE);
 new->n = atoi(global.value);
 new->prev = NULL;
 new->next = *stack;
+
 if (*stack != NULL)
 {
 (*stack)->prev = new;
