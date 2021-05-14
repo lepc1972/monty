@@ -15,7 +15,7 @@ int number;
 
 if (global.value == NULL)
 {
-printf("L%u: usage: push integer\n", line_number);
+fprintf(stderr,"L%u: usage: push integer\n", line_number);
 exit(EXIT_FAILURE);
 }
 size = atoi(global.value) <= 0 ? 1 : 0;
@@ -27,13 +27,13 @@ size++;
 }
 if (size != strlen(global.value))
 {
-printf("L%u: usage: push integer\n", line_number);
+fprintf(stderr,"L%u: usage: push integer\n", line_number);
 exit(EXIT_FAILURE);
 }
 new = malloc(sizeof(stack_t));
 if (new == NULL)
 {
-printf("Error: malloc failed\n");
+fprintf(stderr,"Error: malloc failed\n");
 exit(EXIT_FAILURE);
 }
 
@@ -62,7 +62,7 @@ void o_pop(stack_t **stack, unsigned int line_number)
 
 if (stack == NULL || *stack == NULL)
 {
-printf("L%u: can't pop an empty stack\n", line_number);
+fprintf(stderr,"L%u: can't pop an empty stack\n", line_number);
 exit(EXIT_FAILURE);
 }
 
