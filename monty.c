@@ -74,7 +74,7 @@ char *line = NULL;
 size_t line_length = 0;
 unsigned int line_number = 1;
 
-if (argc < 2)
+if (argc != 2)
 {
 printf("USAGE: monty file\n");
 exit(EXIT_FAILURE);
